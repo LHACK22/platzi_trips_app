@@ -28,34 +28,11 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text("Share"),
-          backgroundColor: Colors.pink,
-          leading: Icon(Icons.arrow_back),
+          title: Text("Hola Mundo Feliz"),
         ),
-        body: Stack(children: <Widget>[
-          Container(
-            decoration: new BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/iceberg.png"),
-                fit: BoxFit.cover,
-              )
-            )
-          ),
-           Center( 
-              child: Container(
-                child: Text(
-                  "Naughty",
-                  style: TextStyle(
-                    fontSize: 30,
-                    color: Colors.white,
-                  ),
-                ),
-                color: Colors.black.withOpacity(0.2),
-                alignment: Alignment.center,
-                height: 80,
-              ),
-            ),
-        ]),
+        body: Center(
+          child: Text("Hola Mundo Platzi"),
+        )
       )
     );
   }
