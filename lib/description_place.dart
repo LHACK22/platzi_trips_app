@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'reviewList.dart';
+import 'button_purple.dart';
 import 'rating.dart';
 
 class DescriptionPlace extends StatelessWidget {
@@ -19,7 +19,7 @@ class DescriptionPlace extends StatelessWidget {
      children: <Widget> [
        Container(
          margin: EdgeInsets.only(
-          top: 20.0,
+          top: 320.0,
           left: 20.0,
           right: 20.0 
          ),
@@ -35,7 +35,7 @@ class DescriptionPlace extends StatelessWidget {
        ),
        Container(
          margin: EdgeInsets.only(
-           top : 23.0
+           top : 323.0
          ),
          child: Row(
             children: <Widget> [
@@ -65,11 +65,11 @@ class DescriptionPlace extends StatelessWidget {
 
 
    return Column(
+     crossAxisAlignment: CrossAxisAlignment.start,
      children:  <Widget>[
        title_starts,
        description,
-       description,
-       new ReviewList(),
+       ButtonPurple("Navigate"),
      ]
    );
   }
