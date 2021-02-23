@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'description_place.dart';
-import 'reviewList.dart';
-import 'header_appbar.dart';
+import 'platzi_trips.dart';
+import 'platzi_trips_cupertino.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,20 +36,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-        body: Stack(
-          children: <Widget>[
-            ListView(
-              children: <Widget>[
-                DescriptionPlace("Bahamas", 4, descriptionDummy),
-                ReviewList()
-              ],
-            ),
-            HeaderAppBar()
-          ],
-        ),
-        // body: new DescriptionPlace("Bahamas", 4, descriptionDummy),
-      )
+      home: PlatziTripsCupertino()
     );
   }
 }
